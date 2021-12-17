@@ -24,5 +24,6 @@ What does this mean?
 
 
 Given all of that, the final currently looks like this.
-![Screen Shot 2021-12-16 at 9 29 02 PM](https://user-images.githubusercontent.com/76268134/146479155-23190d99-1b4d-47a0-b524-fd32f29a1901.png)
+![Screen Shot 2021-12-16 at 9 30 53 PM](https://user-images.githubusercontent.com/76268134/146479265-25131b16-3df0-427c-8e21-084c9e267c5e.png)
+
 
