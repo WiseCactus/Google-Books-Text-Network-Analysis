@@ -1,6 +1,18 @@
 # Google-Books-Text-Network-Analysis
 
-I was motivated to make this because I am deeply saddened by how many books are created and don't get to the people that would highly benefit from reading it. We only have so much time to find and read new books, and, as such, this project seeks to gather some insight on any given topic by understanding the context in which it was used in past decades.  In order to do this, I give the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.  I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages.  After this, the program will compile the images into a pdf.  The user will then have to extract the text from the images (https://ocrgeek.com/) and then send the returned text file to the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. We couldn't make an image for this result. Click to view the whole p appears at the top of the text box), and then go on to get rid of symbols, lower case the words, lemmatize, and spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
+I was motivated to make this because I am deeply saddened by how many books are created and don't get to the people that would highly benefit from reading it. We only have so much time to find and read new books, and, as such, this project seeks to gather some insight on any given topic by understanding the context in which it was used in past decades.  In order to do this, I give the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.  I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages.  After this, the program will compile the images into a pdf. 
+
+Here is a little demo of how the scraper operates:
+
+
+https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-b7e6-69eb1fa918a2.mp4
+
+
+
+The user will then have to extract the text from the images (https://ocrgeek.com/) and then send the returned text file to the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. We couldn't make an image for this result. Click to view the whole p appears at the top of the text box), and then go on to get rid of symbols, lower case the words, lemmatize, and spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
+
+
+
 
 The graph is displayed using the networkX library.
 
