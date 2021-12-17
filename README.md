@@ -1,9 +1,12 @@
 # Google-Books-Text-Network-Analysis
 
-I was motivated to make this because I am deeply saddened by how many books are created and don't get to the people that would highly benefit from reading it. We only have so much time to find and read new books, and, as such, this project seeks to gather some insight on any given topic by understanding the context in which it was used in past decades.  In order to do this, I give the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.  I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages.  After this, the program will compile the images into a pdf. 
+I was motivated to make this because I am deeply saddened by how many books are created and don't get to the people that would highly benefit from reading it. We only have so much time to find and read new books, and, as such, this project seeks to gather some insight on any given topic by understanding the context in which it was used in past decades.  In order to do this, I give the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.  
 
-Here is a little demo of how the scraper operates:
+I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages. 
 
+Here is a little demo of how the scraper operates. The scraper zooms in so that the text is more legible, and before scrolling down, screenshots the text.
+
+All these images are saved in png format and subsequently compiled and saved into a pdf, then deleted to not overload your storage :) 
 
 https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-b7e6-69eb1fa918a2.mp4
 
