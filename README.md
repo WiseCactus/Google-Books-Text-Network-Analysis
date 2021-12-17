@@ -6,3 +6,18 @@ This then will be displayed using the module networkX.
 The final result will look something like this.
 ![Screen Shot 2021-12-01 at 7 32 30 PM](https://user-images.githubusercontent.com/76268134/144347799-86c7eb02-a940-42f9-9df4-03cb2ba5bab8.png)
 
+
+Currently active; Next Steps:
+1. Make the text network something that depicts the variance in which the word has been used throughout the decades.
+ How can we do this?
+  -  Create an x-axis with the set of decades between the chosen decades that depicts the variance in which the word has been used throughout the decades.
+  -  Make the default dictonary nested-nested, such that the adjacency list can contain dictionaries with years as their key values; This can then be used
+     to create associations.
+  -  Put these separate graphs side by side, and find a way to make associations between them, should they contain similar words (this means that the 
+     dictionaries have to be able to create edges with one another).  
+2.  Refine the text pre-processing segment; Some decades use 'old' language, and sometimes, our current dictionaries fail to account for that.
+    Therefore, it might be good here to find a text file or library that someone may have created that contains all the words in old english.
+4.  Make the networks interactable and add hyperlinks to all the nodes, so that viewers can see the sources.
+  How can we do this?
+  -  Still unclear, but certain libraries like bokeh support networkx, so it might be a matter of finding a way to conjoin the two.
+4. Make this available to the public. How this can be done is still unclear.
