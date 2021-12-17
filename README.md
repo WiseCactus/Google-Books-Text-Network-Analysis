@@ -23,7 +23,7 @@ What does this mean?
 4. Make this available to the public. How this can be done is still unclear.
 
 
-Given all of that, the final currently looks like this.
+Given all of that, the final currently looks like this (this is a zoom in of the graph, since its not legible when its zoomed out).
 ![Screen Shot 2021-12-16 at 9 30 53 PM](https://user-images.githubusercontent.com/76268134/146479265-25131b16-3df0-427c-8e21-084c9e267c5e.png)
 
 
