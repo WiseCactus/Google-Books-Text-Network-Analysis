@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-
 
 
 
-The user will then have to extract the text from the images (https://ocrgeek.com/) and then send the returned text file to the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. We couldn't make an image for this result. Click to view the whole p appears at the top of the text box), and then go on to get rid of symbols, lower case the words, lemmatize, and spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
+The user will then have to extract the text from the pdf using the following site (https://ocrgeek.com/) and then send the returned text file as input to the text generator segment of the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. We couldn't make an image for this result. Click to view the whole p appears at the top of the text box), and then go on to get rid of symbols, lower case the words, lemmatize, and spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
 
 
 
@@ -36,10 +36,9 @@ What does this mean?
 4.  Make the networks interactable and add hyperlinks to all the nodes, so that viewers can see the sources.
   How can we do this?
   -  Still unclear, but certain libraries like bokeh support networkx, so it might be a matter of finding a way to conjoin the two.
-4. Make this available to the public. How this can be done is still unclear.
-
+4. We have yet to develop a front-end to all of this. Ideally, we can make this available to the public at some point, but it definetly still needs fine-tuning :)
 
 Given all of that, the final currently looks like this (this is a zoom in of the graph, since its not legible when its zoomed out).
 ![Screen Shot 2021-12-16 at 9 30 53 PM](https://user-images.githubusercontent.com/76268134/146479265-25131b16-3df0-427c-8e21-084c9e267c5e.png)
 
-
+Thank you!
