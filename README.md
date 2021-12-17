@@ -15,8 +15,11 @@ Currently active; Next Steps:
      to create associations.
   -  Put these separate graphs side by side, and find a way to make associations between them, should they contain similar words (this means that the 
      dictionaries have to be able to create edges with one another).  
-2.  Refine the text pre-processing segment; Some decades use 'old' language, and sometimes, our current dictionaries fail to account for that.
-    Therefore, it might be good here to find a text file or library that someone may have created that contains all the words in old english.
+  - There are also lots of nodes, so I will cut out any that have a weight list that is less than 5.
+2.  Refine the text pre-processing segment
+What does this mean?
+ - Some decades use 'old' language, and sometimes, our current dictionaries fail to account for that.Therefore, it might be good here 
+   to find a text file or library that someone may have created that contains all the words in old english.
 4.  Make the networks interactable and add hyperlinks to all the nodes, so that viewers can see the sources.
   How can we do this?
   -  Still unclear, but certain libraries like bokeh support networkx, so it might be a matter of finding a way to conjoin the two.
