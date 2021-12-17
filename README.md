@@ -6,7 +6,7 @@ I created a web crawler to then go through all of the books that contains the wo
 
 Here is a little demo of how the scraper operates. The scraper zooms in so that the text is more legible, and before scrolling down, screenshots the text.
 
-All these images are saved in png format and subsequently compiled and saved into a pdf, then deleted to not overload your storage :) 
+All these images are saved in png format and subsequently compiled and saved into a pdf, then deleted to not overload storage :) 
 
 https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-b7e6-69eb1fa918a2.mp4
 
