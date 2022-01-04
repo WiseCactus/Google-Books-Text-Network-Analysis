@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser app:text-network-Copy2.ipynb
+worker: voila --port=$PORT --no-browser text-network-Copy2.ipynb
