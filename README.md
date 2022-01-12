@@ -32,6 +32,7 @@ The user will then have to extract the text from the pdf using the following sit
 The
 
 Given all of that, the final currently looks like this (this is a zoom in of the graph, since its not legible when its zoomed out).
-![Screen Shot 2021-12-16 at 9 30 53 PM](https://user-images.githubusercontent.com/76268134/146479265-25131b16-3df0-427c-8e21-084c9e267c5e.png)
+
+![Screen Shot 2022-01-12 at 1 30 58 AM](https://user-images.githubusercontent.com/76268134/149075946-52384fbb-0a19-4592-8a3c-7bf5dd02615c.png)
 
 Thank you!
