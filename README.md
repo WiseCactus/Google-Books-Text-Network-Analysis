@@ -26,13 +26,17 @@ https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-
 
 
 
-The user will then have to extract the text from the pdf using the following site (https://ocrgeek.com/) and then send the returned text file as input to the text generator segment of the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
+The user will then have to extract the text from the pdf using the following site (https://ocrgeek.com/) and then send the returned text file as input to the text generator segment of the program.  Before creating the text network, the program will thenwill pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate an adjacency list that composes of all of the words close to the selected word.
 
 
-The
+Given all of that, the final output will produce a weighted graph and a list that look like the following examples:
 
-Given all of that, the final currently looks like this (this is a zoom in of the graph, since its not legible when its zoomed out).
+![bifurcat](https://user-images.githubusercontent.com/76268134/149076115-713b1919-40af-45b9-bc42-d1b2e0382245.png)
 
-![Screen Shot 2022-01-12 at 1 30 58 AM](https://user-images.githubusercontent.com/76268134/149075946-52384fbb-0a19-4592-8a3c-7bf5dd02615c.png)
+![Screen Shot 2022-01-12 at 1 33 55 AM](https://user-images.githubusercontent.com/76268134/149076285-3ba47900-2182-4344-9902-515b3fd068ee.png)
+
+
+
+
 
 Thank you!
