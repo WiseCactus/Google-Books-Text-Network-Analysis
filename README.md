@@ -20,13 +20,12 @@ Here is a little demo of how the scraper operates. The scraper zooms in so that 
 
 All these images are saved in png format and subsequently compiled and saved into a pdf, then deleted to not overload storage :) 
 
-The program will then leverage to Google Drive API to convert the pdf files  into google docs, which has an in-built automatic OCR conversion. The program will then  convert the google docs to text files and feed it back to the program for text pre-processing.
+The program will then leverage to Google Drive API to convert the pdf files  into google docs, which has an in-built automatic OCR conversion. The program will then  convert the google doc(s) to (separate) text file(s) and feed it back to the program for text pre-processing.
 
 https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-b7e6-69eb1fa918a2.mp4
 
 
-
-The user will then have to extract the text from the pdf using the following site (https://ocrgeek.com/) and then send the returned text file as input to the text generator segment of the program.  Before creating the text network, the program will thenwill pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate an adjacency list that composes of all of the words close to the selected word.
+The program will then pre-process the lines in the text file(s), which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate an adjacency list that composes of all of the words close to the selected word.
 
 
 Given all of that, the final output will produce a weighted graph and a list that look like the following examples:
