@@ -9,7 +9,8 @@ The user must also provide a number that the the program will use to determine t
 The user is also provided the option to enter keyword(s) that may help contextualize the search a bit more (i.e. if they are interested in understanding what scientific progressions were made in botany, botany would be the word of choice, and botany and/or science can be added into the keywords). These keywords must be separated by spaces.
 
 
-![Screen Shot 2022-01-12 at 1 24 52 AM](https://user-images.githubusercontent.com/76268134/149075212-cde00f85-5dd4-4ada-853e-58f5551f30b6.png)
+![Screen Shot 2022-01-12 at 1 29 07 AM](https://user-images.githubusercontent.com/76268134/149075687-1e87f88f-bde8-4046-9d51-f300cc8a2715.png)
+
 
 
 
