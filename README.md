@@ -28,7 +28,9 @@ https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-
 The program will then pre-process the lines in the text file(s), which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate an adjacency list that composes of all of the words close to the selected word.
 
 
-Given all of that, the final output will produce a weighted graph and a list that look like the following examples:
+Given all of that, the final output will produce a weighted graph and a list. The way that the graph is weighted is that the program finds the words that is to be contextualized and assigns the following numerical values to words beside it; directly to the right or left of the word gets 5 points, 1 word away gets 4 points, up until 4 words away gets 1 point. Therefore, the numerical value is not merely the number of times the word has been seen associated with the chosen word.
+
+The aforementioned output look like the following:
 
 ![bifurcat](https://user-images.githubusercontent.com/76268134/149076115-713b1919-40af-45b9-bc42-d1b2e0382245.png)
 
