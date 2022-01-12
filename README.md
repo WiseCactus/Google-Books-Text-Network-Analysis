@@ -4,10 +4,13 @@ I was motivated to make this because I am deeply saddened by how many books are 
 I am hoping that my program can help researchers or any curious individuals understand the type of discourse that surrounded a particular topic in a particular time period by providing a visual text network that would display the various nouns, adjectives/adverbs, and verbs associated with it. The program will also provide a list of all of the associated words along with references to the links of the books that contain those associations.
 
 To start, the program gives the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.
-The user also must enter an interval to set the various time periods that they would like to visually display (i.e. interval of 10 when start date is 1820 and end date is 1840 would produce 2 graphs, former with words pertaining to associations in books that were created from 1820-1830, latter from 1830-1840, same start and end date with interval of 20 wouldd produce one graph with 1820-1840).
+The user also must enter an interval to set the various time periods that they would like to visually display (for example in the screeshot demo, the interval of 10 when start date is 1800 and end date is 1830 would produce 3 graphs, former with words pertaining to associations in books that were created from 1810-1820, etc., but the same start and end date with interval of 30 wouldd produce one graph with associations from books created in 1800-1830).
+The user must also provide a number that the the program will use to determine the number of books that it goes through. A number over 10 is recommended because higher number will create a more holistic graph, but is not necessary.
 The user is also provided the option to enter keyword(s) that may help contextualize the search a bit more (i.e. if they are interested in understanding what scientific progressions were made in botany, botany would be the word of choice, and botany and/or science can be added into the keywords). These keywords must be separated by spaces.
 
-![Screen Shot 2022-01-12 at 1 09 51 AM](https://user-images.githubusercontent.com/76268134/149073512-f31a3b5e-6a2b-4d70-b95f-6f9cdf14216e.png)
+
+![Screen Shot 2022-01-12 at 1 24 52 AM](https://user-images.githubusercontent.com/76268134/149075212-cde00f85-5dd4-4ada-853e-58f5551f30b6.png)
+
 
 
 I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages. 
