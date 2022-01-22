@@ -7,10 +7,11 @@ To start, the program gives the user the option to select a word of choice, and 
 The user also must enter an interval to set the various time periods that they would like to visually display (for example in the screeshot demo, the interval of 10 when start date is 1800 and end date is 1830 would produce 3 graphs, former with words pertaining to associations in books that were created from 1810-1820, etc., but the same start and end date with interval of 30 wouldd produce one graph with associations from books created in 1800-1830).
 The user must also provide a number that the the program will use to determine the number of books that it goes through. A number over 10 is recommended because higher number will create a more holistic graph, but is not necessary.
 
-The user is also provided with several options to specialize their search. First, they are able to enter keyword(s) that may help contextualize the search a bit more (i.e. if they are interested in understanding what scientific progressions were made in botany, botany would be the word of choice, and botany and/or science can be added into the keywords). These keywords must be separated by spaces. And second, they have the option to search through only books, magazines, or newspapers (in default the program will search through any one of these); they must enter m for magazines, b for books, and n for newspapers in the analysis type box.
+The user is also provided with several options to specialize their search. First, they are able to enter keyword(s) that may help contextualize the search a bit more (i.e. in the screenshot the user's word is mold; if we wants to understand how it was understood scienfitically, he may add botany and/or science can be added into the keywords). These keywords must be separated by spaces. And second, they have the option to search through only books, magazines, or newspapers (in default the program will search through any one of these); they must enter m for magazines, b for books, and n for newspapers in the analysis type box.
 
 
-![Screen Shot 2022-01-22 at 6 38 35 PM](https://user-images.githubusercontent.com/76268134/150658969-3c2818b5-688d-47b4-990a-1f46ba17801c.png)
+![Screen Shot 2022-01-22 at 6 44 58 PM](https://user-images.githubusercontent.com/76268134/150659070-cc73a6c7-feae-4485-a02f-71d48c6855d5.png)
+
 
 
 
