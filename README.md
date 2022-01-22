@@ -6,10 +6,12 @@ I am hoping that my program can help researchers or any curious individuals unde
 To start, the program gives the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.
 The user also must enter an interval to set the various time periods that they would like to visually display (for example in the screeshot demo, the interval of 10 when start date is 1800 and end date is 1830 would produce 3 graphs, former with words pertaining to associations in books that were created from 1810-1820, etc., but the same start and end date with interval of 30 wouldd produce one graph with associations from books created in 1800-1830).
 The user must also provide a number that the the program will use to determine the number of books that it goes through. A number over 10 is recommended because higher number will create a more holistic graph, but is not necessary.
-The user is also provided the option to enter keyword(s) that may help contextualize the search a bit more (i.e. if they are interested in understanding what scientific progressions were made in botany, botany would be the word of choice, and botany and/or science can be added into the keywords). These keywords must be separated by spaces.
+
+The user is also provided with several options to specialize their search. First, they are able to enter keyword(s) that may help contextualize the search a bit more (i.e. if they are interested in understanding what scientific progressions were made in botany, botany would be the word of choice, and botany and/or science can be added into the keywords). These keywords must be separated by spaces. And second, they have the option to search through only books, magazines, or newspapers (in default the program will search through any one of these); they must enter m for magazines, b for books, and n for newspapers in the analysis type box.
 
 
-![Screen Shot 2022-01-12 at 1 29 07 AM](https://user-images.githubusercontent.com/76268134/149075687-1e87f88f-bde8-4046-9d51-f300cc8a2715.png)
+![Screen Shot 2022-01-22 at 6 38 35 PM](https://user-images.githubusercontent.com/76268134/150658969-3c2818b5-688d-47b4-990a-1f46ba17801c.png)
+
 
 
 
