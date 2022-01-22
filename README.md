@@ -32,7 +32,7 @@ The program will then pre-process the lines in the text file(s), which will invo
 
 Given all of that, the final output will produce a weighted graph and a list. The way that the graph is weighted is that the program finds the words that is to be contextualized and assigns the following numerical values to words beside it; directly to the right or left of the word gets 5 points, 1 word away gets 4 points, up until 4 words away gets 1 point. Therefore, the numerical value is not merely the number of times the word has been seen associated with the chosen word. The words will also be visually displayed in the syntatic category that they are associated to, with nouns at the top left, adjectives and adverbs at the top right, verbs at the bottom right, and everything else at the bottom left.
 
-The aforementioned output look like the following:
+The aforementioned output look like the following (to look at the output in full, check out the attached notebooks file):
 
 ![bifurcat](https://user-images.githubusercontent.com/76268134/149076115-713b1919-40af-45b9-bc42-d1b2e0382245.png)
 
