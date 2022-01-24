@@ -1,6 +1,22 @@
 # Google-Books-Text-Network-Analysis
 
-I was motivated to make this because I am deeply saddened by how many books are created and don't get to the people that would highly benefit from reading it. We only have so much time to find and read new books, and, as such, this project seeks to gather some insight on any given topic by understanding the context in which it was used in past decades.  In order to do this, I give the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.  
+I was motivated to make this program because as a former social science student, I found that since there is so much information nowadays, researching about a topic was often an over-convoluted and inefficient process. It also made me sad because many (older) books (that are usually in archives) tend to get lost and not to the people who may benefit from reading it.
+
+I am hoping that my program can help researchers or any curious individuals understand the type of discourse that surrounded a particular topic in a particular time period by providing a visual text network that would display the various nouns, adjectives/adverbs, and verbs associated with it. The program will also provide a list of all of the associated words along with the title and links of the books that contain those associations. The hope is to make this accessible to anyone by deploying the program through Heroku.
+
+To start, the program gives the user the option to select a word of choice, and a set span of dates that they would like to gain insight from.
+The user also must enter an interval to set the various time periods that they would like to visually display (for example in the screeshot demo, the interval of 10 when start date is 1800 and end date is 1930 would produce 13 graphs, former with words pertaining to associations in books that were created from 1810-1820, etc., but the same start and end date with interval of 30 wouldd produce one graph with associations from books created in 1800-1830).
+The user must also provide a number that the the program will use to determine the number of books that it goes through. A number over 10 is recommended because higher number will create a more holistic graph, but is not necessary.
+
+The user is also provided with several options to specialize their search. First, they are able to enter keyword(s) that may help contextualize the search a bit more (i.e. in the screenshot the user's word is mold; if we wants to understand how it was understood scienfitically, they may add botany and/or science can be added into the keywords). These keywords must be separated by spaces. And second, they have the option to search through only books, magazines, or newspapers (in default the program will search through any one of these); they must enter m for magazines, b for books, and n for newspapers in the analysis type box.
+
+
+![Screen Shot 2022-01-22 at 6 44 58 PM](https://user-images.githubusercontent.com/76268134/150659070-cc73a6c7-feae-4485-a02f-71d48c6855d5.png)
+
+
+
+
+
 
 I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages. 
 
@@ -8,32 +24,24 @@ Here is a little demo of how the scraper operates. The scraper zooms in so that 
 
 All these images are saved in png format and subsequently compiled and saved into a pdf, then deleted to not overload storage :) 
 
+The program will then leverage to Google Drive API to convert the pdf files  into google docs, which has an in-built automatic OCR conversion. The program will then  convert the google doc(s) to (separate) text file(s) and feed it back to the program for text pre-processing.
+
 https://user-images.githubusercontent.com/76268134/146480531-96044276-2212-476b-b7e6-69eb1fa918a2.mp4
 
 
-
-The user will then have to extract the text from the pdf using the following site (https://ocrgeek.com/) and then send the returned text file as input to the text generator segment of the program.  Before creating the text network, I will pre-process the text, which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate a uni-gram corpora, then build an adjacency list that composes of all of the words close to the selected word.
-
+The program will then pre-process the lines in the text file(s), which will involve getting rid of words that are not associated to the book (i.e. "Page 4", which you can see appears with the book pages), and then go on to get rid of symbols, lower case the words, lemmatize, spell-check, in that order.  The program will then take this text and generate an adjacency list that composes of all of the words close to the selected word.
 
 
+Given all of that, the final output will produce a weighted graph and a list. The way that the graph is weighted is that the program finds the words that is to be contextualized and assigns the following numerical values to words beside it; directly to the right or left of the word gets 5 points, 1 word away gets 4 points, up until 4 words away gets 1 point. Therefore, the numerical value is not merely the number of times the word has been seen associated with the chosen word. The words will also be visually displayed in the syntatic category that they are associated to, with nouns at the top left, adjectives and adverbs at the top right, verbs at the bottom right, and everything else at the bottom left. The size of the node will also increase with a heigher weighting to make the strongest associations obvious to the reader.
 
-The graph is displayed using the networkX library.
+The aforementioned output look like the following (to look at the output in full, check out the attached notebooks file):
 
-This is a project that is currently active. There is still a lot that I am trying to work out.
-My next steps are as follows:
-1. Make the text network something that depicts the varied contexts in which the word has been used throughout the decades, which may involve potentially incorporating bigrams or trigrams. This would involve;
-  -  Create an x-axis with the set of decades between the chosen decades that depicts the variance in which the word has been used throughout the decades. Join
-     together the various text networks by making the adjacency list a default dictonary that is double nested-, such that the adjacency list can contain     dictionaries with years as their key values (i.e. adjacencyList[chosen_word][1800][associated_word], in this case chosen_word is the word the user selected,1800 is the decade that we are looking at it from, and associated_word is the word that we found to be next to our chosen word that we are adding an edge to)
-  -  Put these separate graphs side by side, and find a way to make associations between them, should they contain similar words (this means that the 
-     dictionaries have to be able to create edges with one another).  
-  - There are also lots of nodes, so I will cut out any that have a weight list that is less than 5.
-2.  Refine the text pre-processing segment. 
-4.  Make the text network more informative and insightful. This would involve;
-  - Making the networks interactable and add hyperlinks to all the nodes, so that viewers can see the sources by using libraries like bokeh that support networkx, so it might be a matter of finding a way to conjoin the two.
-  - Incorportating topic modelling to extract similar themes over the given decades.
-4. We have yet to develop a front-end to all of this. Ideally, it can be made into a software, or can be made available to the public at some point, but it definetly still needs fine-tuning :)
+![bifurcat](https://user-images.githubusercontent.com/76268134/149076115-713b1919-40af-45b9-bc42-d1b2e0382245.png)
 
-Given all of that, the final currently looks like this (this is a zoom in of the graph, since its not legible when its zoomed out).
-![Screen Shot 2021-12-16 at 9 30 53 PM](https://user-images.githubusercontent.com/76268134/146479265-25131b16-3df0-427c-8e21-084c9e267c5e.png)
+![Screen Shot 2022-01-12 at 1 33 55 AM](https://user-images.githubusercontent.com/76268134/149076285-3ba47900-2182-4344-9902-515b3fd068ee.png)
+
+
+
+
 
 Thank you!
