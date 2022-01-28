@@ -15,9 +15,6 @@ The user is also provided with several options to specialize their search. First
 
 
 
-
-
-
 I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages. 
 
 Here is a little demo of how the scraper operates. The scraper zooms in so that the text is more legible, and before scrolling down, screenshots the text.
@@ -33,6 +30,8 @@ The program will then pre-process the lines in the text file(s), which will invo
 
 
 Given all of that, the final output will produce a weighted graph and a list. The way that the graph is weighted is that the program finds the words that is to be contextualized and assigns the following numerical values to words beside it; directly to the right or left of the word gets 5 points, 1 word away gets 4 points, up until 4 words away gets 1 point. Therefore, the numerical value is not merely the number of times the word has been seen associated with the chosen word. The words will also be visually displayed in the syntatic category that they are associated to, with nouns at the top left, adjectives and adverbs at the top right, verbs at the bottom right, and everything else at the bottom left. The size of the node will also increase with a heigher weighting to make the strongest associations obvious to the reader.
+
+Users should exercise caution in coming to immediate conclusions with the results, and should take it upon themselves to read the sources cited in the hyperlinks to see how the other words in the network are associated to the selected word. For example, a user can type a word 'plant' and include the keyword 'love', but these words can show up independent of each other in various parts of the book, or be associated because they are next to each other in a book's glossary. 
 
 The aforementioned output look like the following (to look at the output in full, check out the attached notebooks file):
 
