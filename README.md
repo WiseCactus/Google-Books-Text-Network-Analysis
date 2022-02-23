@@ -33,7 +33,7 @@ Given all of that, the final output will produce a weighted graph and a list. Th
 
 These networks are meant to provide the user with more insight and direction about the various topics/words that are associated with their word. That being said, users should exercise caution in coming to immediate conclusions with the results, and should take it upon themselves to read the sources cited in the hyperlinks to see how the other words in the network are associated to the selected word. For example, a user can type a word 'plant' and include the keyword 'love', but these words can show up independent of each other in various parts of the book, or be associated because they are next to each other in a book's glossary. Users can observe the weights associated to each associaton to gauge how often a topic is tied to the selected word.
 
-It should also be noted that the networks generated in later years are more likely to be insightful than that of earlier years, since the OCR segment of preprocessing the text tends to suffer more from not being trained to recognize older fonts/texts.
+It should also be noted that the networks generated in later years are more likely to be insightful than that of earlier years, since the OCR segment of preprocessing the text is not as adept at recognizing words in older texts, as well as because many old & middle english words would not be found in the dictionary we use to cross-check the validity of a given word.
 
 The output of this program will look like the following (to look at (an updated) output in full, check out the attached notebooks file):
 
