@@ -35,6 +35,7 @@ These networks are meant to provide the user with more insight and direction abo
 
 It should also be noted that the networks generated in later years are more likely to be insightful than that of earlier years, since the OCR segment of preprocessing the text is not as adept at recognizing words in older texts, as well as because many old & middle english words would not be found in the dictionary we use to cross-check the validity of a given word.
 
+
 The output of this program will look like the following (to look at (an updated) output in full, check out the attached notebooks file):
 
 ![bifurcat](https://user-images.githubusercontent.com/76268134/149076115-713b1919-40af-45b9-bc42-d1b2e0382245.png)
@@ -42,7 +43,7 @@ The output of this program will look like the following (to look at (an updated)
 ![Screen Shot 2022-01-12 at 1 33 55 AM](https://user-images.githubusercontent.com/76268134/149076285-3ba47900-2182-4344-9902-515b3fd068ee.png)
 
 
-
+Current updates focus on trying to product outputs that provide more context to the user, rather than mere associations of words.
 
 
 Thank you!
