@@ -15,7 +15,7 @@ The user is also provided with several options to specialize their search. First
 
 
 
-I created a web crawler to then go through all of the books that contains the word of choice, and screenshot those pages. 
+I created a web scraper to then go through all of the books that contains the word of choice, and screenshot those pages. 
 
 Here is a little demo of how the scraper operates. The scraper zooms in so that the text is more legible, and before scrolling down, screenshots the text.
 
